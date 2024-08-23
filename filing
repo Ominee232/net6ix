@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Open New Tab Immediately</title>
+    <script>
+        // Function to open a new tab
+        function openNewTab() {
+            window.open('https://youtu.be/UCZz-qi4ORk', '_blank');
+        }
+
+        // Execute the function as soon as the DOM is ready
+        document.addEventListener('DOMContentLoaded', openNewTab);
+
+        // Fallback: If DOMContentLoaded doesn't work, try to open on load
+        window.onload = openNewTab;
+    </script>
+</head>
+<body>
+    <h1>Welcome to my website</h1>
+</body>
+</html>
